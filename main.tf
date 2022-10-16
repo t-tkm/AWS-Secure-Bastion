@@ -12,6 +12,7 @@
  }
 
 /* step2
+*/
  resource "aws_internet_gateway" "IGW" {
     vpc_id =  aws_vpc.Main.id
  }
@@ -150,7 +151,6 @@ resource "aws_networkfirewall_logging_configuration" "firewall_logging" {
     }
   }
 }
-*/
 
 ####################################
 # Private bastion subnet resources #

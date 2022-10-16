@@ -1,9 +1,15 @@
 # AWS-Secure-Bastion
+AWS Blog用コード。
+
 ## Step 1
+https://t-tkm.github.io/blog/posts/2022/aws_secure_bastion_1/
+
 ブラウザ経由でLinux(Cloud9)やWindows Server(Fleet Manager)を操作。
 ![img1](./img/AWS-Bastion-Secure-Bastion-No-internet.drawio.png)
 
 ## Step 2
+https://t-tkm.github.io/blog/posts/2022/aws_secure_bastion_2/
+
 インターネットへのアウトバウンド通信のため、Internet Gatewayを設置。アウトバウンド通信はNetwork FirewallでIPS/IDS。
 ![img2](./img/AWS-Bastion-Secure-Bastion-Full.drawio.png)
 
@@ -34,4 +40,4 @@ backend "s3" {
 ```
 export AWS_ACCESS_KEY_ID="<your access key>"
 export AWS_SECRET_ACCESS_KEY="<your secret key>"
-``｀
+```
