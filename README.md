@@ -8,7 +8,9 @@
 ![img2](./img/AWS-Bastion-Secure-Bastion-Full.drawio.png)
 
 step2のコメントブロックにアウトバウンド用リソースが定義されているので、コメント解除して実行。
-```main.tf
+
+**main.tf**
+```
 /* step2
  resource "aws_internet_gateway" "IGW" {
     vpc_id 
@@ -18,7 +20,9 @@ step2のコメントブロックにアウトバウンド用リソースが定義
 
 ## Others
 * Terraform Stateファイル置場はS3で管理(事前にバケット準備)
-```versions.tf
+
+**versions.tf**
+```
 backend "s3" {
     bucket = "secure-bastion-terraform-tfstate"
     key    = "terraform.tfstate"
@@ -30,6 +34,4 @@ backend "s3" {
 ```
 export AWS_ACCESS_KEY_ID="<your access key>"
 export AWS_SECRET_ACCESS_KEY="<your secret key>"
-```
-
-
+``｀
