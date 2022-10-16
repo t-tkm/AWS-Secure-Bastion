@@ -1,0 +1,7 @@
+region = "ap-northeast-1"
+main_vpc_cidr = "10.0.0.0/16"
+az1 = "ap-northeast-1a"
+public_subnet = "10.0.0.0/24"
+private_subnet_firewall = "10.0.10.0/24"
+private_subnet_bastion = "10.0.20.0/24"
+private_subnet_egress = "10.0.30.0/24"
